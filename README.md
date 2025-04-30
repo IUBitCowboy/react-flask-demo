@@ -31,6 +31,7 @@ The React app will display one component with the results of calling the Flask `
 ## Project structure
 If one were to add react front-end onto an existing Flask app, one might use something like the example that postulates putting a React front-end on the Flask tutorial application flaskr.
 
+```
 flaskr-react/
 ├── api/                 # Flask backend
 │   ├── flaskr/          # Your existing Flask code
@@ -41,9 +42,11 @@ flaskr-react/
     ├── src/
     ├── package.json
     └── ...
+```
 
 Our demo will use a much flatter structure. 
 
+```
 ├── app.py                      # Flask backend; endpoint /api/users
 ├── front-end
 │   ├── node_modules            # create-react-app stuff
@@ -53,6 +56,7 @@ Our demo will use a much flatter structure.
 │   ├── README.md               #   ...
 │   └── src                     # our react front-end source files (.js, .json, etc.)
 └── README.md
+```
 
 The flask application is in a single file `app.py` located in the root of the project. To support this pythong project you would normally have a python venv environment into which you would install flask and flask-core.  This will allow you to run the python applicaition with the command `python ./app.py`
 
